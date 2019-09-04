@@ -246,4 +246,3 @@ board[3][4].occupied = 'yes';
 board[7][8].occupied = 'yes';
 board[6][2].occupied = 'yes';
 
-commands(rover1,'rfffrffff');
