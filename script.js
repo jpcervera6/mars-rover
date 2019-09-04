@@ -68,7 +68,7 @@ function createSubArray(){
       case rover.direction === 'E':
         rover.direction = 'S';
         break;
-      case rover.direction = 'S':
+      case rover.direction === 'S':
         rover.direction = 'W';
         break;
       default:
@@ -91,7 +91,7 @@ function createSubArray(){
           rover.y--;
           board[rover.x][rover.y].occupied = 'yes'
         }else{
-          console.log('Obstacle detected, rover stopped');
+          console.log('Obstacle detected, rover stopped!');
           key1 = false;
           break;
         }}else{
@@ -107,7 +107,7 @@ function createSubArray(){
          rover.x--;
          board[rover.x][rover.y].occupied = 'yes' 
         }else{
-          console.log('Obstacle detected, rover stopped');
+          console.log('Obstacle detected, rover stopped!');
           key1 = false;
           break;
         }}else{
@@ -123,7 +123,7 @@ function createSubArray(){
          rover.x++;
          board[rover.x][rover.y].occupied = 'yes' 
         }else{
-          console.log('Obstacle detected, rover stopped');
+          console.log('Obstacle detected, rover stopped!');
           key1 = false;
           break;
         }}else{
@@ -139,7 +139,7 @@ function createSubArray(){
           rover.y++;
           board[rover.x][rover.y].occupied = 'yes'
         }else{
-          console.log('Obstacle detected, rover stopped');
+          console.log('Obstacle detected, rover stopped!');
           key1= false;
           break;
         }}else{
@@ -154,7 +154,7 @@ function createSubArray(){
         break;
         }
      if(key1 === true){
-    console.log("moveForward was called")
+    console.log("moveForward was called!")
     let position = {x:rover.x, y:rover.y};
     rover.travelLog.push(position);
      }else{
@@ -178,7 +178,7 @@ function createSubArray(){
           rover.y++;
           board[rover.x][rover.y].occupied = 'yes'
         }else{
-          console.log('Obstacle detected, rover stopped');
+          console.log('Obstacle detected, rover stopped!');
           key2 = false;
           break;
         }}else{
@@ -194,7 +194,7 @@ function createSubArray(){
           rover.x++;
           board[rover.x][rover.y].occupied = 'yes'
         }else{
-          console.log('Obstacle detected, rover stopped');
+          console.log('Obstacle detected, rover stopped!');
           key2 = false;
           break;
         }}else{
@@ -210,7 +210,7 @@ function createSubArray(){
           rover.x--;
           board[rover.x][rover.y].occupied = 'yes'
         }else{
-          console.log('Obstacle detected, rover stopped');
+          console.log('Obstacle detected, rover stopped!');
           key2 = false;
           break;
         }}else{
@@ -226,7 +226,7 @@ function createSubArray(){
           rover.y--;
           board[rover.x][rover.y].occupied = 'yes'
         }else{
-          console.log('Obstacle detected, rover stopped');
+          console.log('Obstacle detected, rover stopped!');
           key2 = false;
           break;
         }}else{
@@ -241,7 +241,7 @@ function createSubArray(){
         break;
     }
      if(key2 === true){
-    console.log("moveBackward was called")
+    console.log("moveBackward was called!")
     let position = {x:rover.x, y:rover.y};
     rover.travelLog.push(position);
      }else{
