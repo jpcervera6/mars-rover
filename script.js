@@ -238,11 +238,12 @@ function commands(rover,commands){
   console.log(`Rover's travel log is:`) 
   console.log(rover.travelLog); 
 }
+function generateObstacles(obstacles){
+  for(i=0; i<obstacles; i++){
+    board[Math.floor(Math.random()*10)][Math.floor(Math.random()*10)].occupied = 'yes';
+  }
+}
 
-
-
-//obstacles: ob1 = [3,4], ob2 = [7,8], ob3 = [6,2]//
-board[3][4].occupied = 'yes';
-board[7][8].occupied = 'yes';
-board[6][2].occupied = 'yes';
+generateObstacles();
+commands();
 

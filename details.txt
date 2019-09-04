@@ -1,0 +1,12 @@
+Specifications:
+
+Three rovers are declared with names:
+	rover1;
+	rover2;
+	rover3;
+
+All rovers start at (0,0)
+
+To generate obstacles, function generateObstacles() must be run with a desired number of obstacles as argument. The obstacles are generated randomly. Random and floor functions found in google with restrictions of numbers from 0 to 9 to match the board (Math.Floor(Math.random()*10).
+
+
