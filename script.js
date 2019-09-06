@@ -22,6 +22,7 @@ function createSubArray(){
   fillBoard();
   
   let rover1 = {
+    name: 'Rover1',
     direction: 'N',
     x: 0,
     y: 0,
@@ -29,6 +30,7 @@ function createSubArray(){
   };
   
   let rover2 = {
+    name: 'Rover2',
     direction: 'N',
     x: 0,
     y: 0,
@@ -36,6 +38,7 @@ function createSubArray(){
   };
   
   let rover3 = {
+    name: 'Rover3',
     direction: 'N',
     x: 0,
     y: 0,
@@ -271,7 +274,6 @@ function createSubArray(){
     if(key === true){
     for(let k=0; k<commands.length; k++){
       if(stop === true){
-        console.log('Rover stopped!');
         break;
       }else{
       let command = commands.charAt(k);
@@ -295,8 +297,9 @@ function createSubArray(){
     }else{
       console.log(`Command not valid, Rover's position is x:${rover.x}, y:${rover.y}`);
     }
-    console.log(`Rover's travel log is:`) 
+    console.log(`${rover.name}'s travel log is:`) 
     console.log(rover.travelLog); 
+    stop = false;
   }
   function generateObstacles(obstacles){
     for(i=0; i<obstacles; i++){
