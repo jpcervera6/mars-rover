@@ -10,4 +10,6 @@ All rovers start at (0,0)
 To generate obstacles, function generateObstacles() must be run with a desired number of obstacles as argument. The obstacles are generated randomly. Random and floor functions found in google with restrictions of numbers from 0 to 9 to match the board (Math.Floor(Math.random()*10).
 *** When repairing the boundaries and force stop functions, fresh code was copied to the script.js file from codepen ***
 
+*** Changed file name to mars-rover.js for better file management***
+
 
